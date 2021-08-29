@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+
+/* This is Nav menu fonts but haven't decided to use em yet....
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap'); */
+
+body {
+    font: 15px/1.5 'Raleway', 'sans-serif';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #bfbfbf; 
+    
+}
+
+/* This is a global section */
+.container { 
+    
+    width: 80%;
+    margin: auto;  /* This margin here is moving all sections to the middle */
+    overflow: hidden; /* If anything goes outside the div this will hide it */
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* I'd say this button is relatively cool and i kinda like the poppin out thingy, but yeah! not everyones gonna like it... if you don't all you have to do is remove the padding on hover. Thats it! cheers!!!  */
+.button-1 {
+    color: whitesmoke;
+    /* background: #0d6efd;
+    border-color: #0d6efd; */
+    background: #e8491d;
+    border-color: #e8491d;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+.button-1:hover {
+    /* background: #085ddddc; */
+    background: #111;
+    padding: 10px 20px;
+    
+  
+
+}
+
+/* Header */
+
+header {
+    background: #212121;
+    color: whitesmoke;  
+    padding-top: 30px;
+    min-height: 20px;
+    border-bottom: #e8491d 3px solid;
+    /* border-bottom: teal 3px solid;*/
+}
+header a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family:'Segoe UI';
+    
+}
+header li {
+    float: left;
+    display: inline;
+    padding: 0 17px 0 17px;
+
+    
+}
+
+
+header #brand {
+    font-family: 'Allison', cursive;
+    
+    float: left;
+    font-size: 30px;
+    margin-top: -20px;
+
+ 
+}
+header h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+header .brand-tag{
+    color: #e8491d;
+    
+}
+
+
+header a {
+    /* This is for pop out styling */    
+    display: block;
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 48px 0 50px 0; /* This is making the hover sort of like a leaf and also this looks awesome on reletively big words */
+}
+
+header a:hover {
+    /* background: #6b6b6b; this is also a good one but will keep it for some other site */
+    /* background: #bfbfbf; */
+    background: #e8491d;
+    font-weight:inherit;
+    font-size: 1.09em;
+    padding: 10px 15px;
+    color: #111; 
+}
+.current {
+    background: #e8491d;
+    border-radius: 48px 0 50px 0;
+}
+#slider {
+    min-height: 300px;
+    background: url('../images/low.jpg') no-repeat 0 -300px;
+    text-align: center;
+    color: #ffffff;
+
+}
+#slider h1 {
+    margin-top: 120px;
+    font-size: 50px;
+    margin-bottom: 10px;
+
+    
+}
+
+#slider p {
+    font-size: 30px;
+    
+}
+#newsletter {
+    padding: 10px;
+    color: #ffffff;
+    /* background: #35424a; */
+    background: #212121;
+   
+}
+#newsletter p {
+    float: left;
+   font-size: 16px;
+
+}
+#newsletter form {
+    float: right;
+    margin-top: 10px;
+   
+    
+}
+
+/* Despite the use of css3 selcetor here, but i always use this mailbox globally even in login forms and etc */
+#newsletter input[type='email'] {
+    padding: 4px;
+    height: 20px;
+    width: 200px; 
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #111;
+    
+    
+}
+
+#boxes {
+    margin-top: 15px;
+}
+#boxes .box {
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding: 9px;
+    font-size: 19px;
+}
+#boxes .box img{
+    width: 30%;
+
+}
+
+/* Footer Section and Social Media Icons */
+
+
+.end-page {
+    color: #212121;
+    background: #e8491d;
+    
+    text-align:center;
+    padding-top: 5px;
+   
+}
+
+.fa {
+    float: flex-start;
+    
+    padding: 12px;
+    font-size: 20px;
+    max-width: 25%;
+    text-align: center;
+    text-decoration: none;
+    border-radius:50%;
+    
+    
+}
+
+.fa:hover {
+    background: #212121;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    transition: all 200ms ease;
+}
+.social a {
+   margin: 2px 15px;
+}
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+    
+
+/* About Me page css below... */
+
+.about-me {
+    min-height: 500%;
+    background: url('../images/test.jpg');
+}
+ 
